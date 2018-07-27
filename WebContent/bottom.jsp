@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
 <center>
 <div id="footer">
 		서울시 관악구 호암로 546 미림여자정보과학고등학교 3학년 6반 박소담<br>
