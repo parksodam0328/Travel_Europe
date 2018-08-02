@@ -19,7 +19,7 @@ body {
 <br>
 <table width="90%" align="center">
 	<tr align="right" width="100%">
-		<td colspan="8"><span style="font-size:13px; font-weight:500">로그인&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;회원가입</span></td>
+		<td colspan="8"><span style="font-size:13px; font-weight:500"><a href="signIn.jsp">로그인</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="signUp.jsp">회원가입</a></span></td>
 	</tr>
 	<tr align="right" width="100%">
 		<td align="center"><a href="index.jsp"><img src="images/travel_europe.png" width="180px" height="60px"></a></td>

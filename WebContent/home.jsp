@@ -61,12 +61,13 @@
 }
 #mixedSlider .MS-content .item p {
   font-size: 16px;
-  margin: 2px 10px 0 5px;
+  margin: 2px 10px 0px 5px;
+  padding: 0px 0px 10px 0px;
   text-indent: 15px;
 }
 #mixedSlider .MS-content .item a {
   float: right;
-  margin: 0 20px 0 0;
+  margin: 0 20px 20px 0;
   font-size: 16px;
   font-style: italic;
   color: rgba(173, 0, 0, 0.82);
@@ -136,40 +137,39 @@
                                 <h2 class="blogTitle">Animals</h2>
                                 <img src="https://placeimg.com/500/300/animals" alt="" />
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac tellus ex. Integer eu fringilla nisi. Donec id dapibus mauris, eget dignissim turpis ...</p>
-                            <a href="#">Read More</a>
+                            <p>aaa</p>
                         </div>
                         <div class="item">
                             <div class="imgTitle">
                                 <h2 class="blogTitle">Arch</h2>
                                 <img src="https://placeimg.com/500/300/arch" alt="" />
                             </div>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac tellus ex. Integer eu fringilla nisi. Donec id dapibus mauris, eget dignissim turpis ...</p>
-                            <a href="#">Read More</a>
+                           <p>aaa</p>
+                       
                         </div>
                         <div class="item">
                             <div class="imgTitle">
                                 <h2 class="blogTitle">Nature</h2>
                                 <img src="https://placeimg.com/500/300/nature" alt="" />
                             </div>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac tellus ex. Integer eu fringilla nisi. Donec id dapibus mauris, eget dignissim turpis ...</p>
-                            <a href="#">Read More</a>
+                           <p>aaa</p>
+                            
                         </div>
                         <div class="item">
                             <div class="imgTitle">
                                 <h2 class="blogTitle">People</h2>
                                 <img src="https://placeimg.com/500/300/people" alt="" />
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac tellus ex. Integer eu fringilla nisi. Donec id dapibus mauris, eget dignissim turpis ...</p>
-                            <a href="#">Read More</a>
+                            <p>aaa</p>
+                           
                         </div>
                         <div class="item">
                             <div class="imgTitle">
                                 <h2 class="blogTitle">Tech</h2>
                                 <img src="https://placeimg.com/500/300/tech" alt="" />
                             </div>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac tellus ex. Integer eu fringilla nisi. Donec id dapibus mauris, eget dignissim turpis ...</p>
-                            <a href="#">Read More</a>
+                           <p>aaa</p>
+                        
                         </div>
                        
                     </div>

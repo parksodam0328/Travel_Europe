@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>유럽 여행</title>
+<title>Insert title here</title>
 </head>
 <body>
 <jsp:forward page="travel_europe.jsp">
-	<jsp:param name="CONTENTPAGE" value="home.jsp"/>
+	<jsp:param name="CONTENTPAGE" value="signUpProc.jsp"/>
 </jsp:forward>
 </body>
 </html>
