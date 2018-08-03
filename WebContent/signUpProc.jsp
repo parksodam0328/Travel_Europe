@@ -3,6 +3,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<script type="text/javascript">
+	function openIdCheck(){
+		window.name = "parentForm";
+		window.open("idCheckForm.jsp"),
+		"chkForm","width=600,height=300,resizable=no,scrollbars=no");
+	}
+	function inputIdCheck(){
+		document.userInfo.idCheck.value="idUnCheck";
+	}
+</script>
 <link rel="stylesheet" href="login.css">
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,7 +30,7 @@ span#star{
 <body>
 <br><br><br><br><br>
 <center>
-<form action="signUpMember.jsp" method="post">
+<form action="signUpMember.jsp" method="post" name="userInfo">
 <div id="out">
 	<div id="in">
 		<table width="100%" align="center">
@@ -31,7 +41,7 @@ span#star{
 		<br>
 		<table width="100%" align="center" style="border-top:2px solid #ffcccc; border-bottom: 2px solid #ffcccc;">
 			<tr style="border-bottom:1px solid #ffcccc;">
-				<td width="30%" style="padding-left:10px;" class="userInfor"><span id="star">*</span> 아이디</td><td width="70%" style="padding-left:10px;" ><input type="text" name="id" placeholder="띄어쓰기 없는 영문, 숫자로만 6~15자" maxlength="10" minlength="6" required>&nbsp;&nbsp;&nbsp;<input type="button" onclick="checkId()" value="중복확인"></td>
+				<td width="30%" style="padding-left:10px;" class="userInfor"><span id="star">*</span> 아이디</td><td width="70%" style="padding-left:10px;" ><input type="text" name="id" placeholder="띄어쓰기 없는 영문, 숫자로만 6~15자" maxlength="10" minlength="6" required onkeydown="inputIdCheck()">&nbsp;&nbsp;&nbsp;<input type="button" onclick="openIdCheck()" value="중복확인" required><input type="hidden" name="idCheck" value="idUnCheck"></td>
 			</tr>
 			<tr style="border-bottom:1px solid #ffcccc;">
 				<td width="30%" style="padding-left:10px;" class="userInfor"><span id="star">*</span> 비밀번호</td><td width="70%" style="padding-left:10px;" ><input type="password" name="password" placeholder="띄어쓰기 없는 영문, 숫자로만 8~15자" maxlength="10" minlength="8" required></td>

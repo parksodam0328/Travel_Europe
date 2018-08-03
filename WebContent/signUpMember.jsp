@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title></title>
 </head>
 <body>
 <jsp:useBean id="member" class="com.jsp.project.SignUpDataBean">
@@ -21,3 +21,4 @@
 <jsp:getProperty name="member" property="name"/>님 회원가입을 축하합니다.
 </body>
 </html>
+<!-- 디자인 추후 수정 -->

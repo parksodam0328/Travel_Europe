@@ -3,6 +3,7 @@ import java.lang.Exception;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 
@@ -45,5 +46,32 @@ public class SignUpDBBean {
 				try {connection.close();}catch(SQLException ex) {}
 			}
 		}
+	}
+	public int userCheck(String id, String password) throws Exception{
+		Connection connection = null;
+		PreparedStatement pstatement = null;
+		ResultSet resultSet = null;
+		String dbPassword="";
+		int x=-1;
+		
+		try {
+			connection = getConnection();
+			pstatement = connection.prepareStatement("select password from user where id = ?");
+			pstatement.setString(1, id);
+			resultSet = pstatement.executeQuery();
+			
+			if(resultSet.next()) {
+				dbPassword = resultSet.getString("password");
+				if(dbPassword.equals(password)) x = 1; //인증 성공
+				else x = 0; //인증 실패
+			}else x = -1; //해당 아이디 없음
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			if(resultSet!=null) try {resultSet.close();} catch(SQLException ex) {}
+			if(pstatement!=null) try {pstatement.close();} catch(SQLException ex) {}
+			if(connection!=null) try {connection.close();} catch(SQLException ex) {}
+		}
+		return x;
 	}
 }
