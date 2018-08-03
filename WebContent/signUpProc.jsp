@@ -31,7 +31,7 @@ span#star{
 		<br>
 		<table width="100%" align="center" style="border-top:2px solid #ffcccc; border-bottom: 2px solid #ffcccc;">
 			<tr style="border-bottom:1px solid #ffcccc;">
-				<td width="30%" style="padding-left:10px;" class="userInfor"><span id="star">*</span> 아이디</td><td width="70%" style="padding-left:10px;" ><input type="text" name="name" placeholder="띄어쓰기 없는 영문, 숫자로만 6~15자" maxlength="10" minlength="6" required>&nbsp;&nbsp;&nbsp;<input type="button" onclick="checkId()" value="중복확인"></td>
+				<td width="30%" style="padding-left:10px;" class="userInfor"><span id="star">*</span> 아이디</td><td width="70%" style="padding-left:10px;" ><input type="text" name="id" placeholder="띄어쓰기 없는 영문, 숫자로만 6~15자" maxlength="10" minlength="6" required>&nbsp;&nbsp;&nbsp;<input type="button" onclick="checkId()" value="중복확인"></td>
 			</tr>
 			<tr style="border-bottom:1px solid #ffcccc;">
 				<td width="30%" style="padding-left:10px;" class="userInfor"><span id="star">*</span> 비밀번호</td><td width="70%" style="padding-left:10px;" ><input type="password" name="password" placeholder="띄어쓰기 없는 영문, 숫자로만 8~15자" maxlength="10" minlength="8" required></td>

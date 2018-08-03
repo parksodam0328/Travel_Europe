@@ -1,7 +1,5 @@
-<%@page import="java.sql.Statement"%>
-<%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Connection"%>
-<%@page import="com.jsp.project.DBConnection"%>
+<%@page import="com.jsp.project.SignUpDBBean"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -11,21 +9,15 @@
 <title>Insert title here</title>
 </head>
 <body>
+<jsp:useBean id="member" class="com.jsp.project.SignUpDataBean">
+	<jsp:setProperty name="member" property="*"/>
+</jsp:useBean>
 <%
 	request.setCharacterEncoding("UTF-8");
-	String id = request.getParameter("id");
-	String pw = request.getParameter("password");
-	String name = request.getParameter("name");
-	String email  = request.getParameter("email");
 	
-	Connection connection = DBConnection.getMySqlConnection();
-	System.out.print("연결정보 : "+connection);
-	Statement statement = connection.createStatement();
-	
-	String sql = "insert into user values('"+id+"','"+pw+"','"+name+"','"+email+")";
-	statement.executeQuery(sql);
-	response.sendRedirect("home.jsp");
-	
+	SignUpDBBean connection = SignUpDBBean.getInstance();
+	connection.insertMember(member);
 %>
+<jsp:getProperty name="member" property="name"/>님 회원가입을 축하합니다.
 </body>
 </html>
